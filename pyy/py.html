@@ -1,0 +1,63 @@
+<html>
+    <link rel="icon" type="foto/x-icon" href='foto/batu.jpg'>
+    <title>Batu Portfolio</title> 
+<head>
+    <link rel ="stylesheet" type="text/css" href="css.css">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+</head>
+        
+
+<body>
+    <h3>BATU PORTFOLIO</h3>
+    <nav class="navbar">
+        <button class="ab">ABOUT BATU</button>
+        <h class="why">WHY YOU NEED BATU</h>
+        <button class="pj">PROJECTS</button>
+    </nav>
+    <img src="foto/yukarı.png" id="up">
+    
+    <img src="foto/html.png" class="html">
+    <h1>Hello I am <br>Front-End developer <span style="color: rgb(16, 43, 48); text-shadow: 1px 1px 4px rgb(167, 220, 222); ">Batu</span></h1>
+   
+    <a name="pp" class="ppp">I'm first grade industrial engineering student at Uskudar University.<br>I started to learn Front-End developing 4 month ago and I would like to develope myself on this way.</a>
+    <img src="foto/batu.jpg" class="pp">
+
+    <h2>PROJECTS</h2>
+    <a href="https://batu5252.github.io/ansiklopedi/kopekk/" target="_blank"><img src="foto/proje.jpg" class="projeimg"></img></a>
+   
+    <a href="https://www.instagram.com/t.b.ozdemir/" target="_blank"><img src="foto/ig.png" id="ig"></img></a>
+    <a href="https://www.linkedin.com/in/talha-batu-%C3%B6zdemir-548243202/" target="_blank" ><img src="foto/ln.png" id="ln"></a>
+    <a href="https://github.com/batu5252" target="_blank"><img src="foto/gh.png" id="gh"></a>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+$(window).scroll(function(){
+    if($(this).scrollTop() >=350) {
+        $('#up').fadeIn(200);
+    } else{
+        $('#up').fadeOut(200);
+    }
+})
+$('#up').on('click',function() {
+    $('html,body').animate({scrollTop:0},1000);
+})
+
+$('.ab').on('click',function() {
+    $('html,body').animate({scrollTop:780},1500);
+})
+$('.pj').on('click',function() {
+    $('html,body').animate({scrollTop:1900},2500);
+})
+$(window).scroll(function(){
+    if($(this).scrollTop() >=800 ) {
+        $('#down').fadeIn(200);
+    } else
+    {$('#down').fadeOut(200);
+    }
+})
+
+</script>
+</body>
+</html>
